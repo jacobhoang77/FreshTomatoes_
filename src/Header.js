@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 
 function Header() {
-  const [color, setColor] = useState('green');
+  const [color, setColor] = useState('yellowgreen');
 
   const handleClick = () => {
       setColor('purple');
