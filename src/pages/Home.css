@@ -1,0 +1,51 @@
+
+.home {
+    padding: 20px;
+    font-family: 'Firacode',Consolas;
+  }
+  
+  .upcoming-movies,
+  .random-movie {
+    margin-bottom: 40px;
+  }
+  
+  h2 {
+    color: red;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .movie-item {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .movie-poster {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .movie-info {
+    padding: 20px;
+    flex-grow: 1;
+  }
+  
+  .movie-info h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .movie-info p {
+    margin: 5px 0;
+  }
+  
