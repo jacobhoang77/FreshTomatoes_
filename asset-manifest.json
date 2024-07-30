@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/FreshTomatoes_/static/css/main.b3976f8b.css",
-    "main.js": "/FreshTomatoes_/static/js/main.df72ccda.js",
+    "main.css": "/FreshTomatoes_/static/css/main.f66f8c9e.css",
+    "main.js": "/FreshTomatoes_/static/js/main.ac25cdcb.js",
     "static/js/453.cfe1863a.chunk.js": "/FreshTomatoes_/static/js/453.cfe1863a.chunk.js",
     "index.html": "/FreshTomatoes_/index.html",
-    "main.b3976f8b.css.map": "/FreshTomatoes_/static/css/main.b3976f8b.css.map",
-    "main.df72ccda.js.map": "/FreshTomatoes_/static/js/main.df72ccda.js.map",
+    "main.f66f8c9e.css.map": "/FreshTomatoes_/static/css/main.f66f8c9e.css.map",
+    "main.ac25cdcb.js.map": "/FreshTomatoes_/static/js/main.ac25cdcb.js.map",
     "453.cfe1863a.chunk.js.map": "/FreshTomatoes_/static/js/453.cfe1863a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b3976f8b.css",
-    "static/js/main.df72ccda.js"
+    "static/css/main.f66f8c9e.css",
+    "static/js/main.ac25cdcb.js"
   ]
 }
