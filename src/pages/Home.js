@@ -1,4 +1,3 @@
-// File: /src/pages/Home.js
 import React, { useEffect, useState } from 'react';
 import './Home.css';
 

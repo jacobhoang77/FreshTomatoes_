@@ -4,7 +4,7 @@ function Watchlist() {
   return (
     <div className="watchlist">
       <h2>Watchlist</h2>
-      {/* Implement watchlist */}
+      {/* watchlist */}
     </div>
   );
 }
