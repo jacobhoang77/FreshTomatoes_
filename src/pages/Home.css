@@ -1,51 +1,58 @@
-
 .home {
-    padding: 20px;
-    font-family: 'Firacode',Consolas;
-  }
-  
-  .upcoming-movies,
-  .random-movie {
-    margin-bottom: 40px;
-  }
-  
-  h2 {
-    color: #BF00FF;
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .movie-item {
-    display: flex;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-  }
-  
-  .movie-poster {
-    width: 150px;
-    height: auto;
-    object-fit: cover;
-  }
-  
-  .movie-info {
-    padding: 20px;
-    flex-grow: 1;
-  }
-  
-  .movie-info h3 {
-    margin-top: 0;
-    margin-bottom: 10px;
-  }
-  
-  .movie-info p {
-    margin: 5px 0;
-  }
-  
+  padding: 40px; 
+  font-family: 'JetBrains Mono', Consolas, monospace; 
+  background-color: #121212; 
+  color: #e0e0e0; 
+}
+
+.upcoming-movies,
+.random-movie {
+  margin-bottom: 50px; 
+}
+
+h2 {
+  color: #00cc66; 
+  border-bottom: 2px solid #00cc66; 
+  padding-bottom: 15px; 
+  margin-bottom: 30px; 
+  font-size: 24px; 
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.movie-item {
+  display: flex;
+  margin-bottom: 30px; 
+  border: 1px solid #2e2e2e; 
+  border-radius: 8px; 
+  overflow: hidden;
+  background-color: #1e1e1e; 
+}
+
+.movie-poster {
+  width: 180px; 
+  height: auto;
+  object-fit: cover;
+}
+
+.movie-info {
+  padding: 25px; 
+  flex-grow: 1;
+  color: #cccccc; 
+}
+
+.movie-info h3 {
+  margin-top: 0;
+  margin-bottom: 15px; 
+  color: #618b25; 
+  font-size: 20px; 
+}
+
+.movie-info p {
+  margin: 10px 0; 
+  color: #883168; 
+  font-size: 16px;
+}

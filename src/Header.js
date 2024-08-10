@@ -1,30 +1,26 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-
+import React from 'react';
+import { NavLink, Link } from 'react-router-dom';
+import './Header.css'; 
+import logo from './tlogo.jpg'; 
 
 function Header() {
-  const [color, setColor] = useState('yellowgreen');
-
-  const handleClick = () => {
-      setColor('purple');
-  };
-
   return (
-      <header className="header">
-          <h1 style={{ color: color }} onClick={handleClick}>
-              <Link to="/">FreshTomatoes 🍅</Link>
-          </h1>
-          <nav>
-              <ul>
-                  <li><Link to="/">Home</Link></li>
-                  <li><Link to="/movies">Movies</Link></li>
-                  <li><Link to="/favorites">Favorites</Link></li>
-                  <li><Link to="/watchlist">Watchlist</Link></li>
-              </ul>
-          </nav>
-      </header>
+    <header className="header">
+      <Link to="/" className="logo-link">
+        <h1>FRESHTOMATOES</h1> 
+        <img src={logo} alt="Logo" className="logo" /> 
+      </Link>
+      <nav>
+        <ul>
+          <li><NavLink to="/" exact activeClassName="active">Home</NavLink></li>
+          <li><NavLink to="/movies" activeClassName="active">Movies</NavLink></li>
+          <li><NavLink to="/favorites" activeClassName="active">Favorites</NavLink></li>
+          <li><NavLink to="/watchlist" activeClassName="active">Watchlist</NavLink></li>
+          <li className="header-search"><NavLink to="/search" activeClassName="active">Search</NavLink></li>
+        </ul>
+      </nav>
+    </header>
   );
 }
 
 export default Header;
-

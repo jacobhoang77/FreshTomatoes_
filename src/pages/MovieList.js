@@ -1,4 +1,3 @@
-// File: /src/pages/MovieList.js
 import React, { useEffect, useState } from 'react';
 
 const API_KEY = 'dbc2a3c636mshd1a891d0647a30ep110856jsn82bcb945cb54';
