@@ -16,6 +16,7 @@ function Header() {
           <li><NavLink to="/movies" activeClassName="active">Movies</NavLink></li>
           <li><NavLink to="/favorites" activeClassName="active">Favorites</NavLink></li>
           <li><NavLink to="/watchlist" activeClassName="active">Watchlist</NavLink></li>
+          <li><Link to="/login" activeClassName="active">Login</NavLink></li>
           <li className="header-search"><NavLink to="/search" activeClassName="active">Search</NavLink></li>
         </ul>
       </nav>
