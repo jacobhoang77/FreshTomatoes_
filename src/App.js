@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
+import Login from './Login'; 
 import './App.css'; 
 
 const Home = lazy(() => import('./pages/Home'));
@@ -25,6 +26,7 @@ function App() {
               <Route path="/search" element={<SearchPage />} /> 
               <Route path="/favorites" element={<Favorites />} />
               <Route path="/watchlist" element={<Watchlist />} />
+              <Route path="/login" element={<Login/>} /> 
             </Routes>
           </Suspense>
         </main>

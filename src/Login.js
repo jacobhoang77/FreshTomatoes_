@@ -34,8 +34,7 @@ function LoginPage() {
           required
           style={{ padding: '8px', borderRadius: '4px', border: '1px solid #ddd' }}
         />
-
-        <button type="submit" style={{ padding: '10px', borderRadius: '4px', background: '#007bff', color: '#fff', border: 'none', cursor: 'pointer' }}>Login</button>
+      <button type="submit" style={{ padding: '10px', borderRadius: '4px', background: '#19bd78', color: '#fff', border: 'none', cursor: 'pointer' }}>Login</button>
       </form>
     </div>
   );
