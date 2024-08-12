@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { filterMoviesByCategory } from './filterMovies';
+import { filterMoviesByCategory } from './Filter';
 import './SearchMovies.css';
 
 const SearchMovies = () => {
