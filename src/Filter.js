@@ -1,16 +1,14 @@
-const filterMovies = (movies, category) => {
+export const filterMoviesByCategory = (movies, category) => {
   switch (category) {
-    case 'box_office':
-      return movies.filter(movie => movie.boxOffice === true);
-    case 'in_theaters':
-      return movies.filter(movie => movie.inTheaters === true);
-    case 'opening':
-      return movies.filter(movie => movie.opening === true);
-    case 'upcoming':
-      return movies.filter(movie => movie.upcoming === true);
+    case 'BoxOffice':
+      return movies.filter(movie => movie.boxOffice);
+    case 'InTheaters':
+      return movies.filter(movie => movie.inTheaters);
+    case 'Opening':
+      return movies.filter(movie => movie.opening);
+    case 'Upcoming':
+      return movies.filter(movie => movie.upcoming);
     default:
       return movies;
   }
 };
-
-export default filterMovies;
