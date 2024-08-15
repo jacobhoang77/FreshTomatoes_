@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/FreshTomatoes_/static/css/main.c2a2082d.css",
-    "main.js": "/FreshTomatoes_/static/js/main.d0a81081.js",
+    "main.js": "/FreshTomatoes_/static/js/main.8033446d.js",
     "static/css/547.293d0a3d.chunk.css": "/FreshTomatoes_/static/css/547.293d0a3d.chunk.css",
     "static/js/547.a6393069.chunk.js": "/FreshTomatoes_/static/js/547.a6393069.chunk.js",
     "static/css/130.6c20c397.chunk.css": "/FreshTomatoes_/static/css/130.6c20c397.chunk.css",
-    "static/js/130.8cd822f5.chunk.js": "/FreshTomatoes_/static/js/130.8cd822f5.chunk.js",
+    "static/js/130.970b1fba.chunk.js": "/FreshTomatoes_/static/js/130.970b1fba.chunk.js",
     "static/css/957.41cf0df8.chunk.css": "/FreshTomatoes_/static/css/957.41cf0df8.chunk.css",
     "static/js/957.369c87a1.chunk.js": "/FreshTomatoes_/static/js/957.369c87a1.chunk.js",
     "static/css/914.36e1a629.chunk.css": "/FreshTomatoes_/static/css/914.36e1a629.chunk.css",
@@ -22,11 +22,11 @@
     "static/media/tlogo.jpg": "/FreshTomatoes_/static/media/tlogo.78e4f043a48cfbbca438.jpg",
     "index.html": "/FreshTomatoes_/index.html",
     "main.c2a2082d.css.map": "/FreshTomatoes_/static/css/main.c2a2082d.css.map",
-    "main.d0a81081.js.map": "/FreshTomatoes_/static/js/main.d0a81081.js.map",
+    "main.8033446d.js.map": "/FreshTomatoes_/static/js/main.8033446d.js.map",
     "547.293d0a3d.chunk.css.map": "/FreshTomatoes_/static/css/547.293d0a3d.chunk.css.map",
     "547.a6393069.chunk.js.map": "/FreshTomatoes_/static/js/547.a6393069.chunk.js.map",
     "130.6c20c397.chunk.css.map": "/FreshTomatoes_/static/css/130.6c20c397.chunk.css.map",
-    "130.8cd822f5.chunk.js.map": "/FreshTomatoes_/static/js/130.8cd822f5.chunk.js.map",
+    "130.970b1fba.chunk.js.map": "/FreshTomatoes_/static/js/130.970b1fba.chunk.js.map",
     "957.41cf0df8.chunk.css.map": "/FreshTomatoes_/static/css/957.41cf0df8.chunk.css.map",
     "957.369c87a1.chunk.js.map": "/FreshTomatoes_/static/js/957.369c87a1.chunk.js.map",
     "914.36e1a629.chunk.css.map": "/FreshTomatoes_/static/css/914.36e1a629.chunk.css.map",
@@ -43,6 +43,6 @@
   },
   "entrypoints": [
     "static/css/main.c2a2082d.css",
-    "static/js/main.d0a81081.js"
+    "static/js/main.8033446d.js"
   ]
 }
