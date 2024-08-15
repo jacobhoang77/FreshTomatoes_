@@ -46,13 +46,13 @@ function MovieList() {
             <img src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`} alt={movie.title} />
             <div className="movie-info">
               <h3>{movie.title}</h3>
-              <p>RELEASE DATE:{movie.release_date}</p>
-              <p>RATING: {movie.vote_average}</p>
+              <p>Release Date: {movie.release_date}</p>
+              <p>Rating: {movie.vote_average}</p>
               <p className="movie-overview">
                 {expandedMovie === movie.id ? movie.overview : `${movie.overview.slice(0, 100)}...`}
               </p>
               <button className="toggle-overview" onClick={() => toggleOverview(movie.id)}>
-                {expandedMovie === movie.id ? 'CLOSE' : '...'}
+                {expandedMovie === movie.id ? 'CLOSE' : 'SHOW'}
               </button>
             </div>
           </li>
