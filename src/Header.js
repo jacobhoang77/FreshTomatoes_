@@ -12,12 +12,11 @@ function Header() {
       </Link>
       <nav>
         <ul>
-          <li><NavLink to="/" exact="true" activeClassName="active">Home</NavLink></li>
-          <li><NavLink to="/movies" activeClassName="active">Movies</NavLink></li>
-          <li><NavLink to="/favorites" activeClassName="active">Favorites</NavLink></li>
-          <li><NavLink to="/watchlist" activeClassName="active">Watchlist</NavLink></li>
-          <li><NavLink to="/login" activeClassName="active">Login</NavLink></li>
-          <li className="header-search"><NavLink to="/search" activeClassName="active">Search</NavLink></li>
+          <li><NavLink to="/" exact="true" activeclassname="active">HOME</NavLink></li>
+          <li><NavLink to="/movies" activeclassname="active">_</NavLink></li>
+          <li><NavLink to="/surpriseme" activeclassname="active">SUPRISE ME!</NavLink></li>
+          <li><NavLink to="/login" activeclassname="active">LOGIN</NavLink></li>
+          <li className="header-search"><NavLink to="/search" activeclassname="active">SEARCH</NavLink></li>
         </ul>
       </nav>
     </header>

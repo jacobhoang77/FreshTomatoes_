@@ -2,15 +2,16 @@ import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
-import Login from './Login'; 
-import './App.css'; 
+import './App.css';
 
 const Home = lazy(() => import('./pages/Home'));
 const MovieList = lazy(() => import('./pages/MovieList'));
 const MovieDetail = lazy(() => import('./pages/MovieDetail'));
-const SearchPage = lazy(() => import('./SearchPage'));  
+const SearchPage = lazy(() => import('./SearchPage'));
 const Favorites = lazy(() => import('./pages/Favorites'));
 const Watchlist = lazy(() => import('./pages/Watchlist'));
+const SurpriseMe = lazy(() => import('./SurpriseMe'));  
+const RandomQuizGame = lazy(() => import('./Quiz'));   
 function App() {
   return (
     <Router>
@@ -22,10 +23,12 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/movies" element={<MovieList />} />
               <Route path="/movie/:id" element={<MovieDetail />} />
-              <Route path="/search" element={<SearchPage />} /> 
+              <Route path="/search" element={<SearchPage />} />
               <Route path="/favorites" element={<Favorites />} />
               <Route path="/watchlist" element={<Watchlist />} />
-              <Route path="*" element={<Home />} />
+              <Route path="/surpriseme" element={<SurpriseMe />} />  
+              <Route path="/quiz" element={<RandomQuizGame />} />   
+              <Route path="*" element={<Home />} /> 
             </Routes>
           </Suspense>
         </main>
