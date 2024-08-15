@@ -64,4 +64,9 @@
   font-size: 40px; 
   color: #19bd78; 
   margin: 2; 
+  align-items: left;
+}
+.active {
+  font-weight: bold;
+  color: #00cc66; 
 }

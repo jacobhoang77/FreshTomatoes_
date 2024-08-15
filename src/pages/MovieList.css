@@ -1,0 +1,112 @@
+.movie-list {
+    padding: 20px;
+    font-family: 'JetBrains Mono', Consolas, monospace; 
+    background-color: #121212;
+    color: #ddd6d6;
+  }
+  
+  h2 {
+    font-size: 30px;
+    color: #a409a4;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .movie-item {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    color: #d2cdcd;
+  }
+  
+  .movie-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .movie-item img {
+    width: 100%;
+    border-bottom: 2px solid #00cc66;
+  }
+  
+  .movie-info {
+    padding: 10px;
+  }
+  
+  .movie-info h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #08c731;
+  }
+  
+  .movie-info p {
+    margin: 6px 0;
+    font-size: 14px;
+    color: #adc0b6;
+  }
+  
+  .movie-info .movie-overview {
+    font-size: 17px;
+    color: #ca1eb9;
+  }
+  
+  .toggle-overview {
+    background-color: #103f28;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #121212;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .toggle-overview:hover {
+    background-color: #00994d;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    background-color: #00cc66;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 5px;
+    color: #121212;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pagination button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+  }
+  
+  .pagination button:hover:not(:disabled) {
+    background-color: #00994d;
+  }
+  
+  .pagination span {
+    font-size: 16px;
+    color: #e0e0e0;
+  }
+  

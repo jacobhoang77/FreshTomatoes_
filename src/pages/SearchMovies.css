@@ -20,7 +20,92 @@
   .movie-poster {
     border-bottom: 2px solid #618b25;
     margin-bottom: 10px;
-    width: 100%;
+    width: 100%;.movie-results ul {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    }
+    
+    .movie-card {
+      background-color: rgb(36, 27, 27);
+      color: #e0e0e0; 
+      border: 1px solid #6d3a8b;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: 'JetBrains Mono', monospace;
+      border-radius: 8px; 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    }
+    
+    .movie-poster {
+      border-bottom: 2px solid #618b25;
+      margin-bottom: 15px;
+      width: 100%;
+      height: auto;
+      max-height: 220px; 
+      object-fit: cover; 
+      border-radius: 8px; 
+    }
+    
+    .movie-info {
+      text-align: center;
+    }
+    
+    .movie-info h3 {
+      margin: 10px 0;
+      font-size: 22px;
+      color: #7ea349;
+      font-weight: bold;
+    }
+    
+    .movie-info p {
+      font-size: 16px;
+      color: #bd48ab;
+      margin-top: 10px;
+      line-height: 1.5;
+    }
+    
+    /* Styling the filter box */
+    .filters {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #412237;
+      padding: 8px;
+      border-radius: 5px;
+      margin-bottom: 30px;
+      margin-top: 30px;
+      box-shadow: 0 2px 5px rgba(19, 165, 153, 0.1);
+      max-width: 250px;
+    }
+    
+    .filters label {
+      color: #f1e6e6;
+      font-size: 18px;
+      font-weight: bold;
+      margin-right: 5px;
+    }
+    
+    .filters select {
+      color: rgb(149, 85, 156);
+      padding: 5px 8px;
+      font-size: 14px;
+      border: 1px solid #4e132c;
+      border-radius: 5px;
+      background-color: #161615;
+      cursor: pointer;
+      transition: border-color 0.3s ease;
+      width: 100%;
+    }
+    
+    .filters select:focus {
+      border-color: #020202;
+      outline: none;
+    }
+    
   }
   
   .movie-info {
@@ -39,7 +124,6 @@
     color:#bd48ab;
   }
 
-/* Styling the filter box */
 .filters {
   display: flex;
   align-items: center;

@@ -5,13 +5,14 @@ import Footer from './Footer';
 import './App.css';
 
 const Home = lazy(() => import('./pages/Home'));
-const MovieList = lazy(() => import('./pages/MovieList'));
-const MovieDetail = lazy(() => import('./pages/MovieDetail'));
+const MovieList = lazy(() => import('./pages/MovieList')); 
 const SearchPage = lazy(() => import('./SearchPage'));
-const Favorites = lazy(() => import('./pages/Favorites'));
-const Watchlist = lazy(() => import('./pages/Watchlist'));
 const SurpriseMe = lazy(() => import('./SurpriseMe'));  
 const RandomQuizGame = lazy(() => import('./Quiz'));   
+const PopularPeople = lazy(() => import('./pages/PopularP'));  
+const Reviews = lazy(() => import('./pages/Reviews'));  
+const Login = lazy(() => import('./Login'));  
+
 function App() {
   return (
     <Router>
@@ -22,12 +23,12 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/movies" element={<MovieList />} />
-              <Route path="/movie/:id" element={<MovieDetail />} />
               <Route path="/search" element={<SearchPage />} />
-              <Route path="/favorites" element={<Favorites />} />
-              <Route path="/watchlist" element={<Watchlist />} />
               <Route path="/surpriseme" element={<SurpriseMe />} />  
-              <Route path="/quiz" element={<RandomQuizGame />} />   
+              <Route path="/quiz" element={<RandomQuizGame />} />  
+              <Route path="/popular-people" element={<PopularPeople />} />
+              <Route path="/reviews" element={<Reviews />} /> 
+              <Route path="/login" element={<Login />} /> 
               <Route path="*" element={<Home />} /> 
             </Routes>
           </Suspense>

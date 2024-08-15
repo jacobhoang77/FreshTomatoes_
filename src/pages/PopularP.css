@@ -1,0 +1,81 @@
+.popular-people-container {
+    padding: 40px;
+    font-family: 'JetBrains Mono', Consolas, monospace;
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  h2 {
+    color: #00cc66;
+    border-bottom: 2px solid #00cc66;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+  
+  .search-input {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    background-color: #1e1e1e;
+    border: 1px solid #2e2e2e;
+    border-radius: 8px;
+    color: #e0e0e0;
+  }
+  
+  .people-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .person-card {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #2e2e2e;
+    text-align: center;
+  }
+  
+  .person-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .person-info h3 {
+    margin: 10px 0;
+    color: #00cc66;
+  }
+  
+  .person-info p {
+    color: #bd5bad;
+  }
+  
+  .pagination {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .pagination button {
+    background-color: #00cc66;
+    color: #121212;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pagination button:hover {
+    background-color: #00994d;
+  }
+  
+  .pagination span {
+    color: #cccccc;
+  }
+  
