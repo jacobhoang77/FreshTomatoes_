@@ -13,8 +13,6 @@ function Footer() {
           <h3>Quick Links</h3>
           <ul>
             <li><a href="/movies">Popular Movies</a></li>
-            <li><a href="/top-rated">Top Rated Movies</a></li>
-            <li><a href="/upcoming">Upcoming Releases</a></li>
             <li><a href="/reviews">Movie Reviews</a></li>
             <li><a href="/surpriseme">Surprise Me!</a></li>
           </ul>
