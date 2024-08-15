@@ -11,7 +11,6 @@ const MovieDetail = lazy(() => import('./pages/MovieDetail'));
 const SearchPage = lazy(() => import('./SearchPage'));  
 const Favorites = lazy(() => import('./pages/Favorites'));
 const Watchlist = lazy(() => import('./pages/Watchlist'));
-
 function App() {
   return (
     <Router>
@@ -26,7 +25,7 @@ function App() {
               <Route path="/search" element={<SearchPage />} /> 
               <Route path="/favorites" element={<Favorites />} />
               <Route path="/watchlist" element={<Watchlist />} />
-              <Route path="/login" element={<Login/>} /> 
+              <Route path="*" element={<Home />} />
             </Routes>
           </Suspense>
         </main>

@@ -1,62 +1,41 @@
 import React, { useState, useEffect } from 'react';
-import { filterMoviesByCategory } from './Filter';
+import fetchMovies from '../Filter'; 
 import './SearchMovies.css';
-
 const SearchMovies = () => {
   const [query, setQuery] = useState('');
   const [movies, setMovies] = useState([]);
   const [filteredMovies, setFilteredMovies] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-  const [category, setCategory] = useState('All');
-
-  const fetchMovies = async () => {
-    const API_KEY = 'f71a63058781b41be67992f9e77f6da4';
-    const BASE_URL = 'https://api.themoviedb.org/3';
-    const options = {
-      method: 'GET',
-      headers: {
-        accept: 'application/json',
-        Authorization: `Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmNzFhNjMwNTg3ODFiNDFiZTY3OTkyZjllNzdmNmRhNCIsIm5iZiI6MTcyMjI5MjgyNS4yODg3MDQsInN1YiI6IjY2YTgxOWUwNmE3ZTFhMDE5MjhjOWRjMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.c27yQxSBea0btlLS2XPKENd5yHHlP4K5sWdLFVa0m0I`,
-      },
+  const [category, setCategory] = useState('popular'); 
+  useEffect(() => {
+    const loadMovies = async () => {
+      setLoading(true);
+      setError(null);
+      try {
+        const fetchedMovies = await fetchMovies(category); 
+        setMovies(fetchedMovies);
+        setFilteredMovies(fetchedMovies);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
     };
 
-    try {
-      const response = await fetch(
-        `${BASE_URL}/search/movie?query=${query}&include_adult=false&language=en-US&page=1`,
-        options
-      );
-
-      if (!response.ok) {
-        throw new Error('Failed to fetch movies');
-      }
-
-      const data = await response.json();
-      setMovies(data.results);
-      setFilteredMovies(data.results);
-    } catch (error) {
-      setError(error.message);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  useEffect(() => {
-    if (query) {
-      fetchMovies();
-    }
-  }, [query]);
-
-  useEffect(() => {
-    const filtered = filterMoviesByCategory(movies, category);
-    setFilteredMovies(filtered);
-  }, [movies, category]);
+    loadMovies();
+  }, [category]);
 
   const searchMovies = (event) => {
     event.preventDefault();
     setLoading(true);
     setError(null);
-    fetchMovies();
+
+    const filtered = movies.filter((movie) =>
+      movie.title.toLowerCase().includes(query.toLowerCase())
+    );
+    setFilteredMovies(filtered);
+    setLoading(false);
   };
 
   return (
@@ -73,17 +52,17 @@ const SearchMovies = () => {
         <button type="submit">Search</button>
       </form>
       <div className="filters">
-        <label htmlFor="category">Filter by:</label>
+        <label htmlFor="category">FILTER:</label>
         <select
           name="category"
           value={category}
           onChange={(e) => setCategory(e.target.value)}
         >
-          <option value="All">All</option>
-          <option value="BoxOffice">Box Office</option>
-          <option value="InTheaters">In Theaters</option>
-          <option value="Opening">Opening</option>
-          <option value="Upcoming">Upcoming</option>
+          <option value="all">ALL</option>
+          <option value="top_rated">TOP RATED</option>
+          <option value="popular">POPULAR</option>
+          <option value="now_playing">NOW PLAYING</option>
+          <option value="upcoming">UPCOMING</option>
         </select>
       </div>
       {loading && <p>Loading...</p>}
